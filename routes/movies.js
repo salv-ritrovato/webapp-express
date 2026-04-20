@@ -1,20 +1,12 @@
 import express from "express";
-import connection from "../database/connection.js";
+import { index, show } from "../controllers/moviesControllers.js";
 
 const router = express.Router();
 
 // INDEX
-router.get("/", async (req, res) => {
-    const [movies] = await connection.query("SELECT * FROM movies");
-    res.json(movies);
-});
+router.get("/", index);
 
-// SHOW
-router.get("/:id", async (req, res) => {
-    const id = req.params.id;
-    const [movies] = await connection.query("SELECT * FROM movies WHERE id = ?", [id]);
-    const movie = movies[0];
-    res.json(movie);
-});
+// SHOW 
+router.get("/:id", show);
 
 export default router;
