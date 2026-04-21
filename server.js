@@ -11,8 +11,12 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors())
+app.use(cors({
+    origin: process.env.FONT_ORIGIN
+}))
+
 app.use(express.json());
+app.use("/images", express.static("public/img"));
 
 app.get("/", (req, res) => {
     res.send("Server running");
