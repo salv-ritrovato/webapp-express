@@ -16,7 +16,7 @@ app.use(cors({
 }))
 
 app.use(express.json());
-app.use("/images", express.static("public/img"));
+app.use("/images", express.static("public/img/movies_cover"));
 
 app.get("/", (req, res) => {
     res.send("Server running");
