@@ -5,6 +5,9 @@
 - Prepariamo una rotta index per ottenere la lista dei film
 - Prepariamo una rotta show per ottenere i dettagli di un singolo film e le sue recensioni
 
+- Predisponiamo un’API per salvare nel database una nuova recensione legata ad un film
+- Testiamola su postman e verifichiamo che nel DB venga effettivamente inserita una nuova recensione
+
 ## Bonus
 - Inserire le immagini nel progetto express
 - Inserire i dati di connessione al database come variabili d’ambiente
