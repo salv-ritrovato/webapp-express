@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connection from "./database/connection.js"
 import moviesRouter from "./routes/movies.js";
+import reviewsRouter from "./routes/reviews.js";
 import notFound from "./middlewares/notFound.js";
 import serverError from "./middlewares/serverError.js";
 
@@ -23,6 +24,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/movies", moviesRouter);
+app.use("/movies", reviewsRouter);
 
 app.use(notFound);
 app.use(serverError);
