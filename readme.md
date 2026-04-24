@@ -4,7 +4,6 @@
 - Colleghiamo l’app al db e verifichiamo che tutto funzioni
 - Prepariamo una rotta index per ottenere la lista dei film
 - Prepariamo una rotta show per ottenere i dettagli di un singolo film e le sue recensioni
-
 - Predisponiamo un’API per salvare nel database una nuova recensione legata ad un film
 - Testiamola su postman e verifichiamo che nel DB venga effettivamente inserita una nuova recensione
 
